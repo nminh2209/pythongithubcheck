@@ -1,0 +1,208 @@
+.wallet {
+  margin-top: 180px !important; /* Push the entire content down */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.wallet-card {
+  width: 80%;
+  max-width: 900px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wallet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wallet-balance, .portfolio-value, .total-value {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+.wallet-btn {
+  padding: 10px 15px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.wallet-btn:hover {
+  background-color: #45a049;
+}
+
+.portfolio-card {
+  width: 80%;
+  max-width: 900px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.volume-column {
+  font-weight: bold;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+:root {
+  --background-light: #f5f7fa;
+  --background-dark: #121212;
+  --card-light: white;
+  --card-dark: #1e1e1e;
+  --text-light: black; /* Black text for Light Mode */
+  --text-dark: white;  /* White text for Dark Mode */
+  --primary-color: #4caf50;
+  --primary-hover: #45a049;
+  --button-danger: #e74c3c;
+  --button-danger-hover: #c0392b;
+}
+
+body {
+  background-color: var(--background-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Activate Dark Mode */
+.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+/* Wallet Container */
+.wallet {
+  margin-top: 180px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--background-light);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Dark mode for wallet */
+.dark-mode .wallet {
+  background-color: var(--background-dark);
+}
+
+/* Card Styles */
+.wallet-card, .portfolio-card {
+  width: 80%;
+  max-width: 900px;
+  background: var(--card-light);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: var(--text-light);
+}
+
+/* Dark mode for card */
+.dark-mode .wallet-card,
+.dark-mode .portfolio-card {
+  background: var(--card-dark);
+  color: var(--text-dark);
+}
+
+/* Wallet Header */
+.wallet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Text color based on mode */
+.wallet-balance, .portfolio-value, .total-value, .card-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+/* Dark mode text */
+.dark-mode .wallet-balance,
+.dark-mode .portfolio-value,
+.dark-mode .total-value,
+.dark-mode .card-title {
+  color: var(--text-dark);
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  color: var(--text-light);
+}
+
+/* Dark mode for table */
+.dark-mode .table th,
+.dark-mode .table td {
+  color: var(--text-dark);
+  border-bottom: 1px solid #555;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  background-color: var(--button-danger);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--button-danger-hover);
+}
