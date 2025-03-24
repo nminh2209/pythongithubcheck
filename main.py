@@ -8,7 +8,7 @@ from collections import defaultdict
 org_name = "cos30049-suvhn"  # Replace with your organization name
 github_token = 'GITHUB_TOKEN'  # Replace with your personal GitHub token
 
-# Set up headers for GitHub API requests
+# Set up headers for GitHub API requests    
 headers = {
     "Authorization": f"token {github_token}",
     "Accept": "application/vnd.github.v3+json"
